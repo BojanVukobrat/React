@@ -82,8 +82,7 @@ function App() {
       <div className="body">
         <Routes>
             <Route path="/" element={<MovieList movies={movies} addMovie={addMovie} isScheduled={false} removeFromSchedule={removeFromSchedule} size={schedule.length}/>}/>
-            <Route path="/schedule" element={<MovieList movies={schedule} addMovie={addMovie} isScheduled={true} removeFromSchedule={removeFromSchedule}/>}/>
-            <Route path="/movie/:id" element={<Movie movies={movies} addMovie={addMovie} />}/>
+            <Route path="/schedule" element={<MovieList movies={schedule} addMovie={addMovie} isScheduled={true} removeFromSchedule={removeFromSchedule}/>}/>\
         </Routes>
       </div>
     </div>
