@@ -124,6 +124,12 @@ input{
   color: white;
 }
 
+.movie h1 {
+  font-size: 24px;
+  margin: 1;
+  color: white;
+}
+
 .movie p {
   font-size: 14px;
   margin: 5px 0 0;

@@ -67,13 +67,13 @@ function App() {
 
   const [schedule, setSchedule] = useState([]);
 
-  // function addMovie(movie){
-  //   setSchedule([...schedule, movie])
-  // }
+  function addMovie(movie){
+    setSchedule([...schedule, movie])
+  }
 
-  // function removeFromSchedule(movie){
-  //   setSchedule(schedule.filter((element) => element.id != movie.id));
-  // }
+  function removeFromSchedule(movie){
+    setSchedule(schedule.filter((element) => element.id != movie.id));
+  }
 
   return (
     <BrowserRouter>
