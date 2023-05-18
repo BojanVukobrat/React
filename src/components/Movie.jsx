@@ -19,10 +19,10 @@ const Movie = ({ movie, addMovie, isScheduled, size, removeFromSchedule }) => {
                 <p>{movie.date != "" ? <>{movie.date}</> : <>{movie.genre}</>}</p>
             </div>
             <div className="details">
-            {isScheduled ? <></> : <label htmlFor="date">Date:</label>}
+            {isScheduled ? <></> : <label htmlFor="date" style={{ color: 'white' }}>Date:</label>}
                 {isScheduled ? <></> : <input type="text" id="date" onChange={(e) => setNewMovie({ ...movie, date: e.target.value, id:(size+1) })}/>}
                 {isScheduled ? <button className="pagination-btn"
-                 style={{ backgroundColor: '#006680', color: 'white', border: 'none', padding: '10px', borderRadius: '5px', cursor: 'pointer', justifyContent: 'center', alignItems: 'center', display: 'flex' }}
+                 style={{ backgroundColor: '#006680', color: 'white', border: 'none', padding: '10px', borderRadius: '5px', cursor: 'pointer', justifyContent: 'center', alignItems: 'center', display: 'flex', marginLeft: '200px' }}
                   onClick={() => removeFromSchedule(movie)}>Cancel</button> : <button className="pagination-btn"
                  style={{ backgroundColor: '#006680', color: 'white', border: 'none', padding: '10px', borderRadius: '5px', cursor: 'pointer', justifyContent: 'center', alignItems: 'center', display: 'flex' }}
                   onClick={() => CheckaddMovie(newMovie)}>Schedule movie</button>}
